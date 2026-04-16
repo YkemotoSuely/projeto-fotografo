@@ -50,7 +50,7 @@
         }
         main{
             background-color: #ffffff;
-            max-width: 900px; /*largura do formulário* - colocando o prefixo max. deixa o layout responsivo/
+            max-width: 900px; /*largura do formulário* - colocando o prefixo max. deixa o layout responsivo*/
             margin: 30px auto;
             padding: 30px;
             border-radius: 10px; /*arredondamento das bordas*/
