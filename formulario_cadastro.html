@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="css/formulario_cadastro.css" />
+</head>
+    <body>
+        
+        <main>
+            <h1>Formulário de Cadastro</h1>
+            <p>Campos com (*) são de preenchimento obrigatório</p> 
+
+            <form>
+                 
+                <fieldset>
+
+                    <legend>Dados de Acesso</legend> 
+
+                    <div class="grupo">
+                        <label for="nome">Nome</label>
+                        <input type="nome" name="nome" id="nome" placeholder="Digite seu nome"
+                        required />
+
+                    
+                    
+                    </div>
+
+                    <div class="grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email"
+                        required />
+
+                        
+                    
+                    </div>
+
+                
+                    <div class="grupo">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="nome" id="nome" placeholder="********"
+                        required 
+                        minlength="5"/>
+                    
+                        
+                    
+                    </div>
+
+                </fieldset>
+
+                
+                <fieldset>
+
+                    <legend>Dados do Perfil</legend>
+
+                    <div class="grupo">
+                        <label for="data_nasc">Data Nascimento</label>
+                        <input type="date" name="data_nasc" id="data_nasc"/>
+                                        
+                    </div>
+
+                    <div class="grupo">
+                        <label for="arquivo">Foto de Perfil</label>
+                        <input type="file" name="arquivo" id="arquivo" />    
+                    
+                    </div>
+
+                    <div class="grupo">
+                        <label for="hobby">Hobby</label>
+                        <select name="hobby">
+                            <option>Selecione um hobby</option>
+                            <option value="TV">TV</option>
+                            <option value="Livro">Livro</option>
+                            <option value="Musica">Musica</option>
+                        </select>
+
+                    </div>
+
+                    <div class="grupo">
+                        <label> <input type="radio" name="genero" />Masculino </label>
+                        <label> <input type="radio" name="genero" />Feminino </label>
+                    
+                    </div>
+
+                    <div class="grupo">
+                        <label for="estado">Estado</label>
+                        <select name="estado">
+                            <option>Selecione um estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+
+                    </div>
+
+                    <div class="grupo">
+                        <label for="mensagem">Mensagem</label><br/>
+                        <textarea 
+                        name='mensagem' 
+                        id="mensagem" 
+                        rows="10" 
+                        ></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="submit">Limpar</button>
+                    </div>
+
+
+
+
+                </fieldset>  
+            </form>
+            
+
+        </main>
+    
+</body>
+</html>

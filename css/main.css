@@ -165,8 +165,68 @@
             font-weight: bold;
         }
 
-        /*fim formatção tabela*/
+        /*fim formatação tabela*/
 
+        /*Formatação de Formulário*/
+
+        form{
+
+            padding: 30px;
+            max-width: 500px;   
+            margin: 0 auto;
+
+        }
+
+        .grupo{
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;    
+        }
+        .grupo label{
+
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .grupo input, .grupo select, .grupo textarea{
+
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .grupo input:focus, .grupo select:focus, .grupo textarea:focus{
+
+            outline: none;
+            border-color: #004de6;
+        }
+
+        fieldset{
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        fieldset legend{
+            font-weight: bold;  
+        }
+
+        fieldset div label{
+
+            margin: 10px;
+        }
+
+        fieldset div label input{
+
+            margin-right: 5px;
+            transform: scale(1.2); /*aumenta o tamanho do quadradinho do check-box*/
+        }
+
+
+        /*Fim formatação de Formulário*/
 
         @media(max-width: 768px){   
 

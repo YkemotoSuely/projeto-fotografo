@@ -1,166 +1,138 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Contato - Curso de Fotografia</title> 
-    <meta name="description" content="Acesse o curso de Fotografia para profissionais"/>
-    <meta name = "keywords" content = "curso, fotografia, senac"/>
-    <meta name= "author" content = "Suely Ykemoto"/> 
-    <link rel="stylesheet" href="css/main.css"/>
+    <title>Contato - Curso de Fotografia</title>
+    <meta name="description" content="Acesse o curso de Fotografia para profissionais" />
+    <meta name="keywords" content="curso, fotografia, senac" />
+    <meta name="author" content="Suely Ykemoto" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
-    <body>
-        <header>
-            <div id ="barra-cabecalho">
-                <h1>Curso de Fotografia Profissioal</h1>
-                <p>Descubra como capturar momentos único e transformar sua paixão por fotografia em uma carreira inspiradora</p> 
+
+<body>
+    <header>
+        <div id="barra-cabecalho">
+            <h1>Curso de Fotografia Profissioal</h1>
+            <p>Descubra como capturar momentos único e transformar sua paixão por fotografia em uma carreira inspiradora
+            </p>
+        </div>
+        <div id="navbar-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="conteudo.html">Conteúdo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <h2>Contato</h2>
+        <form action="contato.html" method="post" enctype="multipart/form-data">
+
+            <div class="grupo">
+                <label for="nome">Nome</label>
+                <input type="nome" name="nome" id="nome" placeholder="Digite seu nome" required />
+
             </div>
-            <div id="navbar-menu">   
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="conteudo.html">Conteúdo</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+
+            <div class="grupo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required />
+
             </div>
 
-        </header>
-        <main>
-            <h2>Contato</h2>
-            <form 
-                action="contato.html"
-                method="post"
-                enctype="multipart/form-data">
 
-                 <div>
-                    <label for="nome">Nome</label>
-                    <input type="nome" name="nome" id="nome" placeholder="Digite seu nome"
-                    required 
+            <div class="grupo">
+                <label for="senha">Senha</label>
+                <input type="password" name="nome" id="nome" placeholder="********" required minlength="5" />
 
-                    />
-                    
-                </div>
+            </div>
 
-                <div>
-                    <label for="eamil">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email"
-                    required 
+            <div class="grupo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000" />
 
-                    />
-                    
-                </div>
+            </div>
 
-                
-                <div>
-                    <label for="senha">Senha</label>
-                    <input type="password" name="nome" id="nome" placeholder="********"
-                    required 
-                    minlength="5"
-                    
-                    />
-                    
-                </div>
+            <div class="grupo">
+                <label for="data_nasc">Data Nascimento</label>
+                <input type="date" name="data_nasc" id="data_nasc" />
 
-                <div>
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000"
-                    
-                    />
-                    
-                </div>
+            </div>
 
-                <div>
-                    <label for="data_nasc">Data Nascimento</label>
-                    <input type="date" name="data_nasc" id="data_nasc"
-                    
-                    />
-                    
-                </div>
 
-              
 
-                <div>
-                    <label for="idade">Idade</label>
-                    <input type="number" name="idade" id="idade"    
-                    min="0" max="130"
-                    
-                    />
-                    
-                </div>
+            <div class="grupo">
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" min="0" max="130" />
+
+            </div>
+
+            <div class="grupo">
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" />
+
+            </div>
+
+            <div class="grupo">
+                <label for="arquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="arquivo" />
+
+            </div>
+
+            <div class="grupo">
+                <label for="volume">Volume</label>
+                <input type="range" name="volume" id="volume" min="0" max="100" />
+
+            </div>
+
+            <div class="grupo">
+                <label for="curso">Curso</label>
+                <select name="curso">
+                    <option>Selecione um curso</option>
+                    <option value="Fotografia">Fotografia</option>
+                    <option value="Desing">Design</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+
+            </div>
+
+            <fieldset>
+                <legend>Interesses</legend>
 
                 <div>
-                    <label for="cor">Cor</label>
-                    <input type="color" name="cor" id="cor"    
-                    />
-                    
+                    <label> <input type="checkbox" name="interesse[]" />Fotografia</label>
+                    <label> <input type="checkbox" name="interesse[]" />Video</label>
+                    <label> <input type="checkbox" name="interesse[]" />Edição</label>
                 </div>
-                
-                <div>
-                    <label for="arquivo">Arquivo</label>
-                    <input type="file" name="arquivo" id="arquivo"    
-                    
-                    />
-                    
-                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gênero</legend>
 
                 <div>
-                    <label for="volume">Volume</label>
-                    <input type="range" name="volume" id="volume"    
-                    min="0" max="100"
-                    
-                    />
-                    
+                    <label> <input type="radio" name="genero" />Masculino </label>
+                    <label> <input type="radio" name="genero" />Feminino </label>
+                    <label> <input type="radio" name="genero" />Não-Binário </label>
+                    <label> <input type="radio" name="genero" />Prefiro não informar </label>
+
                 </div>
+            </fieldset>
 
-                  <select>
-                    <label for="curso">Selecione um Curso</label>
-                    <select name="curso">   
-                        <option value="Fotografia">Fotografia</option>
-                        <option value="Desing">Design</option>
-                        <option value="Marketing">Marketing</option>
-                
-                  </select>
-                    
-                </div>
+            <div class="grupo">
+                <label for="mensagem">Mensagem</label><br/>
+                <textarea name='mensagem' id="mensagem" rows="10" cols="50"></textarea>
+            </div>
 
-                <fieldset>
-                    <legend>Interesses</legend>
+            <div><button type="submit">Enviar</button></div>
+            <div><button type="submit">Limpar</button></div>
+        </form>
 
-                    <div>
-                        <label> <input type="checkbox" name="interesse[]"/>Fotografia</label>
-                        <label> <input type="checkbox" name="interesse[]"/>Video</label>
-                        <label> <input type="checkbox" name="interesse[]"/>Edição</label>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Gênero</legend>
-
-                    <div>
-                        <label> <input type="radio" name="genero"/>Masculino </label>
-                        <label> <input type="radio" name="genero"/>Feminino </label>
-                        <label> <input type="radio" name="genero"/>Não-Binário </label>
-                        <label> <input type="radio" name="genero"/>Prefiro não informar </label>
-                        
-                    </div>
-                </fieldset>
-
-                <div>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea
-                        name='mensagem'
-                        id="mensagem"
-                        rows="10"
-                        cols="50"
-                    ></textarea>
-                </div>
-                
-                <div><button type="submit">Enviar</button></div>
-                <div><button type="submit">Limpar</button></div>
-            </form>
-
-        </main>
-        <footer id = "rodape">
-            <p>&copy; 2026 Senac Marília - Todos os direitos são reservados</p>
-        </footer>
-    </body>
+    </main>
+    <footer id="rodape">
+        <p>&copy; 2026 Senac Marília - Todos os direitos são reservados</p>
+    </footer>
+</body>
 
 </html>
